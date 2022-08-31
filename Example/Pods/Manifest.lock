@@ -1,15 +1,40 @@
 PODS:
-  - UserCenterModule (0.1.0)
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - UserCenterModule (0.2.0):
+    - UserCenterModule/Home (= 0.2.0)
+    - UserCenterModule/Mine (= 0.2.0)
+  - UserCenterModule/Home (0.2.0):
+    - AFNetworking
+  - UserCenterModule/Mine (0.2.0)
 
 DEPENDENCIES:
   - UserCenterModule (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
 
 EXTERNAL SOURCES:
   UserCenterModule:
     :path: "../"
 
 SPEC CHECKSUMS:
-  UserCenterModule: 3be75d60a0ab3d2be08d39a8056900a0e8f4226f
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  UserCenterModule: 4f8e777baaa3796c491448a4543babf95578cc47
 
 PODFILE CHECKSUM: 5a5e317a32f54df3594939f1a77e2ecc75718355
 

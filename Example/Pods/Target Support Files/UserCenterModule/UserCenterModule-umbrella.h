@@ -10,6 +10,11 @@
 #endif
 #endif
 
+#import "HomeModel.h"
+#import "HomeViewController.h"
+#import "HeadView.h"
+#import "MineModel.h"
+#import "MineViewController.h"
 #import "UIView+cmn.h"
 
 FOUNDATION_EXPORT double UserCenterModuleVersionNumber;

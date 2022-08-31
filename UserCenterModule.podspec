@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UserCenterModule'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'A short description of UserCenterModule.'
 
 # This description is used to generate tags and improve search results.
@@ -30,8 +30,19 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '10.0'
 
-  s.source_files = 'UserCenterModule/Classes/**/*'
-  
+  #s.source_files = 'UserCenterModule/Classes/**/*'
+  s.subspec 'Home' do |home|
+    home.source_files = 'UserCenterModule/Classes/HomePageModule/**/*'
+    home.public_header_files = 'UserCenterModule/Classes/HomePageModule/**/*.h'
+    home.dependency 'AFNetworking'
+  end
+
+  s.subspec 'Mine' do |mine|
+    mine.source_files = 'UserCenterModule/Classes/MineModule/**/*'
+    mine.public_header_files = 'UserCenterModule/Classes/MineModule/**/*.h'
+  end
+
+
   # s.resource_bundles = {
   #   'UserCenterModule' => ['UserCenterModule/Assets/*.png']
   # }
